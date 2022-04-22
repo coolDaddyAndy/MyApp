@@ -38,7 +38,7 @@ extension MainVC: UITextFieldDelegate {
         if textField.text != "" {
             return true
         } else {
-            textField.placeholder = "Give city name, please"
+            textField.placeholder = "Give city name"
             return false
         }
     }
