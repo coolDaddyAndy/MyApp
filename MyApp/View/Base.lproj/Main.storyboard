@@ -37,7 +37,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vc5-ib-KJh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vc5-ib-KJh" userLabel="condition ImageView">
                                 <rect key="frame" x="120" y="348" width="151" height="155.33333333333334"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -46,10 +46,20 @@
                                 </constraints>
                                 <imageReference key="image" image="cloud.sun" catalog="system" symbolScale="large"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search the city" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="njz-Fi-uOo">
+                                <rect key="frame" x="87" y="740" width="216" height="34"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="sge-9n-O2O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="njz-Fi-uOo" firstAttribute="top" secondItem="bx0-kR-a3f" secondAttribute="bottom" constant="-104" id="6Ts-R6-sxx"/>
                             <constraint firstItem="bx0-kR-a3f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Fw-Ca-XUP"/>
                             <constraint firstItem="Lkf-iw-Jmx" firstAttribute="top" secondItem="Toh-sP-eGI" secondAttribute="bottom" constant="20" id="86K-Re-vRE"/>
                             <constraint firstItem="Toh-sP-eGI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Xr-Hx-ndR"/>
@@ -60,11 +70,17 @@
                             <constraint firstAttribute="bottom" secondItem="bx0-kR-a3f" secondAttribute="bottom" id="Qyu-pU-kyc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bx0-kR-a3f" secondAttribute="trailing" id="RKO-Kq-fzn"/>
                             <constraint firstItem="vc5-ib-KJh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Uw6-ap-pyY"/>
+                            <constraint firstItem="njz-Fi-uOo" firstAttribute="centerX" secondItem="bx0-kR-a3f" secondAttribute="centerX" id="ecT-G8-cop"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Toh-sP-eGI" secondAttribute="trailing" constant="16" id="f71-pA-uNI"/>
                             <constraint firstItem="Toh-sP-eGI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="vvF-lb-EWd"/>
                             <constraint firstItem="vc5-ib-KJh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xCG-mj-TbE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Toh-sP-eGI" id="2eW-UL-Eef"/>
+                        <outlet property="conditionImageView" destination="vc5-ib-KJh" id="ygF-F9-WRS"/>
+                        <outlet property="temperatureLabel" destination="Lkf-iw-Jmx" id="D2Z-5L-Wry"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

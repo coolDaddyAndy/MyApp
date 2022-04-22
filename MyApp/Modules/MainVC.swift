@@ -8,6 +8,10 @@
 import UIKit
 
 class MainVC: UIViewController {
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var conditionImageView: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
