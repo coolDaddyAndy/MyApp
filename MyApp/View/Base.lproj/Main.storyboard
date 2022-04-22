@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toh-sP-eGI">
-                                <rect key="frame" x="16" y="115" width="358" height="92"/>
+                                <rect key="frame" x="16" y="155" width="358" height="52"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -47,10 +47,10 @@
                                 <imageReference key="image" image="cloud.sun" catalog="system" symbolScale="large"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search the city" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="njz-Fi-uOo">
-                                <rect key="frame" x="87" y="740" width="216" height="34"/>
+                                <rect key="frame" x="120" y="72" width="150" height="34"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="sge-9n-O2O"/>
+                                    <constraint firstAttribute="width" constant="150" id="Ozq-Vp-gd8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -59,7 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="njz-Fi-uOo" firstAttribute="top" secondItem="bx0-kR-a3f" secondAttribute="bottom" constant="-104" id="6Ts-R6-sxx"/>
+                            <constraint firstItem="njz-Fi-uOo" firstAttribute="centerX" secondItem="bx0-kR-a3f" secondAttribute="centerX" id="2c2-NS-AjT"/>
                             <constraint firstItem="bx0-kR-a3f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Fw-Ca-XUP"/>
                             <constraint firstItem="Lkf-iw-Jmx" firstAttribute="top" secondItem="Toh-sP-eGI" secondAttribute="bottom" constant="20" id="86K-Re-vRE"/>
                             <constraint firstItem="Toh-sP-eGI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Xr-Hx-ndR"/>
@@ -70,15 +70,16 @@
                             <constraint firstAttribute="bottom" secondItem="bx0-kR-a3f" secondAttribute="bottom" id="Qyu-pU-kyc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bx0-kR-a3f" secondAttribute="trailing" id="RKO-Kq-fzn"/>
                             <constraint firstItem="vc5-ib-KJh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Uw6-ap-pyY"/>
-                            <constraint firstItem="njz-Fi-uOo" firstAttribute="centerX" secondItem="bx0-kR-a3f" secondAttribute="centerX" id="ecT-G8-cop"/>
+                            <constraint firstItem="Toh-sP-eGI" firstAttribute="top" secondItem="njz-Fi-uOo" secondAttribute="bottom" constant="49" id="XNp-MB-Zu9"/>
+                            <constraint firstItem="bx0-kR-a3f" firstAttribute="top" secondItem="njz-Fi-uOo" secondAttribute="bottom" constant="-106" id="e4i-xM-8En"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Toh-sP-eGI" secondAttribute="trailing" constant="16" id="f71-pA-uNI"/>
-                            <constraint firstItem="Toh-sP-eGI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="vvF-lb-EWd"/>
                             <constraint firstItem="vc5-ib-KJh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xCG-mj-TbE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="Toh-sP-eGI" id="2eW-UL-Eef"/>
                         <outlet property="conditionImageView" destination="vc5-ib-KJh" id="ygF-F9-WRS"/>
+                        <outlet property="searchTextField" destination="njz-Fi-uOo" id="Saa-jm-X9G"/>
                         <outlet property="temperatureLabel" destination="Lkf-iw-Jmx" id="D2Z-5L-Wry"/>
                     </connections>
                 </viewController>
